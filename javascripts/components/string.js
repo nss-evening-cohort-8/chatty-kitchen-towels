@@ -12,8 +12,8 @@ const setCharacters = (newArray) => {
   const detailsBuilder = (messagesArray) => {
     let domString = '';
     messagesArray.forEach((message) => { //this turns pets/getpetz into a new array character
-       domString +=   `<div id="${message.messageId} class="card  ml-5 mr-5">`
-       domString +=   `<div class="d-flex justify-content-between">`
+       domString +=   `<div id="${message.messageId}" class="card">`
+       domString +=   `<div class="d-flex justify-content-between ml-5 mr-5 align-items-center">`
        domString +=     `<div class="mt-4">`
        domString +=         `<h3>${message.name}</h3>`
        domString +=     `</div>`

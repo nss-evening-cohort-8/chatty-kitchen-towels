@@ -1,3 +1,5 @@
+![ScreenShot](https://github.com/nss-evening-cohort-8/chatty-kitchen-towels/blob/master/GP2_Chatty.jpg) 
+
 # Chatty Group Project
 Your group will be creating a chat application. The features your team will build have already been added to your backlog in the "projects" section of this repo. This application should demonstrate your skills in:
 - Modular code

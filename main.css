@@ -5,3 +5,15 @@ body,
 #message-box {
     border: 2px solid black;
 }
+
+#names {
+    margin-left: 48%;
+    padding-top: 2%;
+    
+}
+
+#options {
+    margin-left: 58%;
+    padding-top: .5%;
+    padding-bottom: 1%;
+}

@@ -1,4 +1,4 @@
-import {getMessages} from "../Data/data.js"
+// import {getMessages} from "../Data/data.js"
 import {printToDom} from "../helpers/util.js"
 
 let choices = [];

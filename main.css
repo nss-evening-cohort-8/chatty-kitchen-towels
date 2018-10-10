@@ -1,4 +1,5 @@
-body {
+body,
+.card {
     background-color: cornflowerblue;
 }
 #message-box {

@@ -1,8 +1,9 @@
-import {setCharacters} from '../components/string.js'
+import {setCharacters,detailsBuilder,choices} from '../components/string.js'
 
 function executeThisCodeAfterFileLoaded () {
     const data = JSON.parse(this.responseText); 
     setCharacters(data.messages);
+    detailsBuilder(choices)
 }
 
 function executeThisCodeIfXhrFails () {

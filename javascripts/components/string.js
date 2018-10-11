@@ -1,5 +1,5 @@
-// import {getMessages} from "../Data/data.js"
 import {printToDom} from "../helpers/util.js"
+import {activateDeletes} from "./delete.js"
 
 let choices = [];
 
@@ -21,15 +21,15 @@ const setCharacters = (newArray) => {
        domString +=         `<h5>${message.message}   ${message.createdAt}</h5>`
        domString +=     `</div>`
        domString +=     `<div class"mb-4"> `      
-       domString +=         `<button type="button" class="btn btn-success">EDIT</button>`
-       domString +=         `<button type="button" class="btn btn-warning">DELETE</button>`
+       domString +=         `<button id="${message.messageId}1" type="button" class="newMessage1 btn btn-success">EDIT</button>`
+       domString +=         `<button id="${message.messageId}2" type="button" class="newMessage2 btn btn-warning">DELETE</button>`
        domString +=     `</div>`
        domString +=  `</div>`
        domString +=  `</div>`
     });
     printToDom(domString);
+    activateDeletes();
     // sortEvents();
   };
-
 
   export {setCharacters,detailsBuilder,choices}

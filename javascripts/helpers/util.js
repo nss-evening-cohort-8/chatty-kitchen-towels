@@ -1,6 +1,7 @@
-const printToDom = (stringToPrint, elementId) => {
-    const selectedDiv = document.getElementById(elementId);
+
+const printToDom = (stringToPrint) => {
+    const selectedDiv = document.getElementById("message-box");
     selectedDiv.innerHTML = stringToPrint;
 };
 
-export default {printToDom}
+export {printToDom};

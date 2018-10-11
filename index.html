@@ -13,6 +13,14 @@
 <body>
     <!-- BEGIN NAVBAR -->
     <div class="nav-wrapper">
+        <div id="names">
+            <input id="xavier" type="checkbox" name="user" value=""> Xavier
+            <input id="joanna" type="checkbox" name="user" value=""> Joanna
+            <input id="mackenzie" type="checkbox" name="user" value=""> Mackenzie
+            <input id="gunter" type="checkbox" name="user" value=""> Gunter
+            <input id="iveta" type="checkbox" name="user" value=""> Iveta
+            <input id="sven" type="checkbox" name="user" value=""> Sven
+        </div>
         <div class="d-flex flex-row justify-content-around m-3" id="navigation">
             <h1>Chatty</h1>
             <input type="text" class="w-50" placeholder="Enter message here">
@@ -21,8 +29,9 @@
     <!-- END NAVBAR -->
 
     <!-- BUTTON FOR MODAL -->
+    <div class="row d-flex justify-content-end"></div>
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Custom Themes</button>
-
+    </div>
     <!-- BEGIN MODAL -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
@@ -35,7 +44,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="bgColorPicker">...</div>
+                    <div class="txtColorPicker">...</div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -46,7 +56,12 @@
     </div>
     <!-- END MODAL -->
 
-    <h1>Chatty</h1>
+    <div id="options">
+        <input type="checkbox" class="offset-4 mt-5" id="darkScheme" name="feature" value="scales" />
+        <label for="darkScheme">Dark Theme</label>
+        <input type="checkbox" id="largeText" name="feature" value="scales" />
+        <label for="largeText">Large Text</label>
+    </div>
 
     <div id="message-box"></div>
 
@@ -62,6 +77,7 @@
     <script src="./javascripts/helpers/util.js" type="module"></script>
     <script src="./javascripts/Data/data.js" type="module"></script>
     <script src="./javascripts/components/string.js" type="module"></script>
+    <script src="./javascripts/themes/darktheme.js" type="module"></script>
     <script src="/javascripts/main.js" type="module"></script>
 
 </body>

@@ -1,19 +1,21 @@
 body,
 .card {
-    background-color: cornflowerblue;
+    background-color: black;
+    color: white;
 }
+
 #message-box {
-    border: 2px solid black;
+    border: 2px solid white;
+    padding: 1%;
+    margin: 1.5%;
 }
 
 #names {
-    margin-left: 48%;
-    padding-top: 2%;
-    
+    margin-left: 46%;
+    padding-top: 2%;   
 }
 
 #options {
-    margin-left: 58%;
-    padding-top: .5%;
-    padding-bottom: 1%;
+    margin-left: 80%;
+    padding-bottom: 2%;
 }

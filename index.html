@@ -18,23 +18,28 @@
             <input id="sven" type="checkbox" name="user" value=""> Sven
            </div>
         <div class="d-flex flex-row justify-content-around m-3" id="navigation">
-            <h1>Chatty</h1>
-            <input type="text" class="w-50" placeholder="Enter message here">
+            
+                <img class="logo" src="./images/chatty.png" alt="logo">
+            <input type="text" class="w-50 h-25" placeholder="Enter message here">
         </div>
     </div>
 
     <div id="options"> 
-            <input id="theme" type="checkbox" name="theme" value=""> Toggle Theme
-            <input id="text" type="checkbox" name="text" value=""> Enlarge Text
-            <input id="custom" type="checkbox" name="custom" value=""> Customize Theme
+            <input id="theme" type="checkbox" name="theme" value="">Theme
+            <input id="text" type="checkbox" name="text" value="">Text
+            <input id="custom" type="checkbox" name="custom" value="">Custom
         </div>
    
     <div id="message-box" class="ml-5 mr-5"></div>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./javascripts/components/navBar.js" type="module"></script>
+    <script src="./javascripts/components/options.js" type="module"></script>
     <script src="./javascripts/helpers/util.js" type="module"></script>
     <script src="./javascripts/components/delete.js" type="module"></script>
     <script src="./javascripts/Data/data.js" type="module"></script>

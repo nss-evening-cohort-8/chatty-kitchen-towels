@@ -1,14 +1,11 @@
-// Setting Body to "text" //
-
+// Setting Options Results div to "text" //
 let text = document.getElementById('optionsResults')
 
 // Setting Check Box to "fontSize" //
-
 let fontSize = document.getElementById('text')
 
 // Function To Change Font Size If Checked //
-
-function enlargeText() {
+const enlargeText = () => {
     if (fontSize.checked === true) {
       text.style.fontSize = '20px'; 
     }
@@ -17,24 +14,17 @@ function enlargeText() {
     }
 }
 
-// Event Listener For The Checkbox //
-
-// fontSize.onclick = textChecked
+// Event Listener For The Text Checkbox //
 fontSize.addEventListener('click', enlargeText);
 
-
-
-// Setting Body to "theme" //
-
+// Setting Options Results DIV to "theme" //
 let theme = document.getElementById('optionsResults')
 
 // Setting Theme Check Box to "flipTheme" //
-
 let flipTheme = document.getElementById('theme')
 
 // Function To Flip Theme If Checked //
-
-function switchTheme() {
+const switchTheme = () => {
     if (flipTheme.checked === true) {
         theme.className = 'flipTheme'
     }

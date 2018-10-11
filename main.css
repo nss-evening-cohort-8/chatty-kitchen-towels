@@ -1,18 +1,15 @@
-/* body,
+body,
 .card {
     background-color: cornflowerblue;
 }
 #message-box {
     border: 2px solid black;
-} */
-
-#messageArea {
-    border: black solid 3px;
 }
 
 #names {
     margin-left: 48%;
     padding-top: 2%;
+    
 }
 
 #options {

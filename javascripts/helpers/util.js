@@ -1,6 +1,5 @@
-
 const printToDom = (stringToPrint) => {
-    const selectedDiv = document.getElementById("messageArea");
+    const selectedDiv = document.getElementById("message-box");
     selectedDiv.innerHTML = stringToPrint;
 };
 

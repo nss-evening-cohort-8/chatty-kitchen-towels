@@ -8,13 +8,11 @@
 
 #message-box {
     border: black solid 3px;
-    background-color: white;
 }
 
 #names {
     margin-left: 48%;
     padding-top: 2%;
-    
 }
 
 #options {

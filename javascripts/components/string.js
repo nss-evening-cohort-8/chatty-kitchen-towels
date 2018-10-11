@@ -13,7 +13,7 @@ const setCharacters = (newArray) => {
     let domString = '';
     messagesArray.forEach((message) => { //this turns pets/getpetz into a new array character
     //    domString +=   `<div class="card  mb-3 bg-light" style="width: 18rem;">`
-       domString +=   `<div class="card  ml-5 mr-5">`
+       domString +=   `<div class="ml-5 mr-5">`
        domString +=   `<div class="d-flex justify-content-between">`
        domString +=     `<div class="mt-4">`
        domString +=         `<h3>${message.name}</h3>`

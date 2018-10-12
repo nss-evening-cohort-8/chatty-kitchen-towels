@@ -1,38 +1,51 @@
-// Setting bumbleBee Check Box to "bumbleTheme" //
+// Setting Options Results DIV to "theme" //
+// Logic copied from options.js //
+let theme = document.getElementById('optionsResults')
+
+// Setting for Additional Theme Options //
 let bumbleTheme = document.getElementById('bumbleBee')
-
-// Setting tinderRed Check Box to "tinderTheme" //
 let tinderTheme = document.getElementById('tinderRed')
-
-// Setting plentyBlue Check Box to "plentyTheme" //
 let plentyTheme = document.getElementById('plentyBlue')
-
-// Setting matchOrange Check Box to "matchTheme" //
 let matchTheme = document.getElementById('matchOrange')
 
-// Function To Change to Custom Theme if Checked //
+const untick = () => {
+    const modalDiv = document.getElementById("customModal");
+    const inputCollection = modalDiv.getElementsByTagName("input");
+    for (let i = 0; i < inputCollection.length; i++) {
+        if (inputCollection[i].type === "checkbox") {
+            if (inputCollection[i].checked) {
+                inputCollection[i].checked = false;
+            }
+        }
+    }
+}
+
+// Function To Change to Additional Themes if Checked //
 const customTheme = () => {
     if (bumbleTheme.checked === true) {
-        bumbleBee.className = 'bumbleTheme'
+        theme.className = 'bumbleTheme'
     }
-    else if {
+    else if
         (tinderTheme.checked === true) {
-        tinderRed.className = 'tinderTheme'
+        theme.className = 'tinderTheme'
     }
-    else if {
+    else if
         (plentyTheme.checked === true) {
-        plentyBlue.className = 'plentyTheme'
+        theme.className = 'plentyTheme'
     }
-    else if {
+    else if
         (matchTheme.checked === true) {
-        matchOrange.className = 'matchTheme'
+        theme.className = 'matchTheme'
     }
     else {
         theme.className = 'main'
+    }
 }
-]
 
-customTheme.addEventListener('click', );
+// Event Listeners //
+bumbleTheme.addEventListener('click', customTheme);
+tinderTheme.addEventListener('click', customTheme);
+plentyTheme.addEventListener('click', customTheme);
+matchTheme.addEventListener('click', customTheme);
 
-
-export {customTheme};
+export { customTheme };

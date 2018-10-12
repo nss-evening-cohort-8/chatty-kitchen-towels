@@ -1,46 +1,56 @@
-import{choices} from "./string.js";
+import{choices, detailsBuilder, getmessagez} from "./string.js";
 
 
-
-let messageBox = document.getElementById('message-box');
-const users = document.getElementById('names');
-
-// const selectUsers =()=>{
-// const userName = document.querySelector('.user:checked').value;
-// console.log(userName);
-// }
-// selectUsers();
-
-const userName=()=>{
+const userName= ()=> {
 const nameDiv= document.getElementById("names");
 const inputCollection = nameDiv.getElementsByTagName("input");
 for(let i=0; i< inputCollection.length; i++ ){
     if(inputCollection[i].type==="checkbox"){
-        inputCollection[i].addEventListener('click', ()=>{ 
             if(inputCollection[i].checked){         
-                const userName = document.querySelector('.user:checked').value;
-                // console.log(userName);
+                let userName1 = document.querySelector('.user:checked').value;
+                return userName1;
             }
-        })
     }
 }
 }
-userName();
-    
+// function to clear checked box 
+const uncheck= ()=>{
+    const nameDiv= document.getElementById("names");
+    const inputCollection = nameDiv.getElementsByTagName("input");
+    for(let i=0; i< inputCollection.length; i++ ){
+        if(inputCollection[i].type==="checkbox"){     
+                if(inputCollection[i].checked){         
+                    inputCollection[i].checked=false;
+                }
+        }
+    }
+}
+// function to find Id length
+let counterX = 0;
+window.addEventListener('load', () => {
+    getmessagez();
+    // returns the length of arrays of object
+    counterX = Object.keys(choices).length;
+});
+
 const inputString = () => {
-    const userInput = document.getElementById('input-field');
+    let userInput = document.getElementById('input-field');
     userInput.addEventListener('keypress', (e)=> {
         if(e.keyCode===13){
+            let user = userName();
+            counterX++;
+            // returns value of input field
             let value = userInput.value;
-
-        //   messageBox.innerHTML = userInput.value;
+            let createdMessage = {messageId:"message"+counterX, name:user, message:value, createdAt:"00.00"};
+            // Adding new object to array  
+            choices.unshift(createdMessage);
+            detailsBuilder(choices);
+            userInput.value = "";
+            uncheck();
         }
     })
 }
-inputString();
+
+export{inputString};
 
 
-
-// const getmessagez = ()=>{
-//     return messageaArray;
-// }

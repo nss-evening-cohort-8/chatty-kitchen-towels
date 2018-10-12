@@ -9,6 +9,11 @@ const setCharacters = (newArray) => {
   console.log(newArray);
 };
 
+const getmessagez = ()=>{
+  return choices;
+  }
+
+
 const detailsBuilder = (messagesArray) => {
   let domString = '';
   messagesArray.forEach((message) => { //this turns pets/getpetz into a new array character
@@ -32,4 +37,4 @@ const detailsBuilder = (messagesArray) => {
   // sortEvents();
 };
 
-export { setCharacters, detailsBuilder, choices }
+export { setCharacters, detailsBuilder, choices, getmessagez }

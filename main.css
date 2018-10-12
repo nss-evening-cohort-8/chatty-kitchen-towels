@@ -24,3 +24,47 @@ body,
     margin-left: 80%;
     padding-bottom: 2%;
 }
+
+.label {
+    color: black;
+}
+
+.modalBox {
+    outline: 2px solid black;
+}
+
+.modalBg {
+    background-color: black;
+}
+
+.modal-header {
+    background-color: rgba(4, 184, 165);
+}
+
+.modal-body {
+    background-color: white;
+}
+
+.modal-footer {
+    background-color: rgba(4, 184, 165);
+}
+
+.bumbleTheme {
+    background-color: rgb(245, 245, 31);
+    color: black;
+}
+
+.tinderTheme {
+    background-color: rgb(241, 31, 31);
+    color: white;
+}
+
+.plentyTheme {
+    background-color: rgb(61, 86, 224);
+    color: white;
+}
+
+.matchTheme {
+    background-color: orange;
+    color: black;
+}

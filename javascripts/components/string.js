@@ -1,5 +1,5 @@
-import { printToDom } from "../helpers/util.js"
-import { activateDeletes } from "./delete.js"
+import {printToDom} from "../helpers/util.js"
+import {activateDeletes} from "./delete.js"
 
 let choices = [];
 
@@ -7,7 +7,7 @@ const setCharacters = (newArray) => {
   choices = newArray;
   console.log(choices);
   console.log(newArray);
-};
+  };
 
 const getmessagez = ()=>{
   return choices;
@@ -16,7 +16,7 @@ const getmessagez = ()=>{
 
 const detailsBuilder = (messagesArray) => {
   let domString = '';
-  messagesArray.forEach((message) => { //this turns pets/getpetz into a new array character
+  messagesArray.forEach((message) => {
     domString += `<div id="${message.messageId}">`
     domString += `<div class="d-flex justify-content-between ml-5 mr-5 align-items-center">`
     domString += `<div class="mt-4">`

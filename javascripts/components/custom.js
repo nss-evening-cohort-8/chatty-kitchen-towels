@@ -8,17 +8,25 @@ let tinderTheme = document.getElementById('tinderRed')
 let plentyTheme = document.getElementById('plentyBlue')
 let matchTheme = document.getElementById('matchOrange')
 
+// const untick = () => {
+//     const modalDiv = document.getElementById("customModal");
+//     const inputCollection = modalDiv.getElementsByTagName("input");
+//     for (let i = 0; i < inputCollection.length; i++) {
+//         if (inputCollection[i].type === "checkbox") {
+//             if (inputCollection[i].checked) {
+//                 inputCollection[i].checked = false;
+//             }
+//         }
+//     }
+// }
+
 const untick = () => {
-    const modalDiv = document.getElementById("customModal");
-    const inputCollection = modalDiv.getElementsByTagName("input");
-    for (let i = 0; i < inputCollection.length; i++) {
-        if (inputCollection[i].type === "checkbox") {
-            if (inputCollection[i].checked) {
-                inputCollection[i].checked = false;
-            }
-        }
-    }
-}
+    $('#closeButton').click(function (e) {
+        $('input:checked').removeAttr('checked');
+        e.preventDefault();
+    });
+    untick();
+};
 
 // Function To Change to Additional Themes if Checked //
 const customTheme = () => {
@@ -48,4 +56,4 @@ tinderTheme.addEventListener('click', customTheme);
 plentyTheme.addEventListener('click', customTheme);
 matchTheme.addEventListener('click', customTheme);
 
-export { customTheme };
+export { customTheme, untick }

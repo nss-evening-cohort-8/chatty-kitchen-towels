@@ -1,7 +1,7 @@
  import {getMessages} from "../javascripts/Data/data.js"
  import {inputString} from "./components/navBar.js"
  import {enlargeText, switchTheme} from "../javascripts/components/options.js"
- import {customTheme} from "../javascripts/components/custom.js"
+ import {customTheme, untick} from "../javascripts/components/custom.js"
 
 
  const initializeApp = () => {
@@ -10,5 +10,6 @@
     switchTheme();
     inputString();
     customTheme();
+    untick();
  }
  initializeApp();

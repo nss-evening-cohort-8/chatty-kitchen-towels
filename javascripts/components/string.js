@@ -1,5 +1,6 @@
 import {printToDom} from "../helpers/util.js"
 import {activateDeletes} from "./delete.js"
+import {messEdit} from "../components/edit.js"
 
 let choices = [];
 
@@ -12,7 +13,6 @@ const setCharacters = (newArray) => {
 const getmessagez = ()=>{
   return choices;
   }
-
 
 const detailsBuilder = (messagesArray) => {
   let domString = '';
@@ -34,7 +34,7 @@ const detailsBuilder = (messagesArray) => {
   });
   printToDom(domString);
   activateDeletes();
-  // sortEvents();
+  messEdit();
 };
 
 export { setCharacters, detailsBuilder, choices, getmessagez }

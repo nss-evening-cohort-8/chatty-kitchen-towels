@@ -1,12 +1,13 @@
 body,
 .card {
     background-color: black;
-    background-image: url("./images/background.png");
     color: white;
 }
 
 #message-box {
     border: 2px solid white;
+    border-radius: 7px;
+    background-image: url("./images/background.png");
     padding: 1%;
     margin: 2%;
 }
@@ -17,13 +18,16 @@ body,
 }
 
 #input-field {
-    border: 2px cyan;
-    background-color: black;
-    color: white;
-    height: 15%;
-    width: 65%;
+    border: 2px black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    height: 10%;
+    width: 75%;
+    padding: 1%;
     margin: 1%;
-    padding-top: 2%;
+    margin-top: 4%;
+    
 }
 #clear-button{
     height: 17%;
@@ -33,6 +37,7 @@ body,
 }
 #names {
     margin-left: 35%;
+    margin-top: 2%;
       
 }
 
@@ -40,7 +45,7 @@ body,
     padding-top: 292px;
 }
 #options {
-    margin-left: 80%;
+    margin-left: 70%;
     padding-bottom: 2%;
 }
 

@@ -4,37 +4,37 @@
        "messageId": "message1",
        "name": "Xavier",
        "message":"Hey Joanna!! Let me know when you get this message",
-       "createdAt": "00:00"
+       "createdAt": "Today at 10:00AM"
    },
    {
        "messageId": "message2",
        "name": "Joanna",
        "message":"Sup pup, Got the message but waiting on Mackenzie",
-       "createdAt": "00:00"
+       "createdAt": "Yesterday at 10:00PM"
    },
    {
        "messageId": "message3",
        "name": "Mackenzie",
        "message":"Don't wait for me Joanna. Do what you got to do. I am with Gunter",
-       "createdAt": "00:00"
+       "createdAt": "Yesterday at 7:30PM"
    },
    {
        "messageId": "message4",
        "name": "Gunter",
        "message":"You are not with me.. Why you got to lie like that?",
-       "createdAt": "00:00"
+       "createdAt": "Yesterday at 6:30PM"
    },
    {
        "messageId": "message5",
        "name": "Iveta",
        "message":"Hey everyone!",
-       "createdAt": "00:00"
+       "createdAt": "Yesterday at 6:10PM"
    },
    {
        "messageId": "message6",
        "name": "Sven",
        "message": "Sup!",
-       "createdAt": "00:00"
+       "createdAt": "Yesterday at 11:15AM"
    }
    
    ]

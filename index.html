@@ -11,12 +11,13 @@
 </head>
 
 <body>
+<!-- Begin Message Entry Feature -->
     <div id="optionsResults">
         <div class="header-wrapper">
             <div class="nav-wrapper fixed-top">
                 <div id="names" class="namesBoxes">
                     <input id="xavier" type="checkbox" name="user" value="Xavier" class="user"> Xavier
-                    <input id="joanna" type="checkbox" name="user" value="Joann" class="user"> Joanna
+                    <input id="joanna" type="checkbox" name="user" value="Joanna" class="user"> Joanna
                     <input id="mackenzie" type="checkbox" name="user" value="MacKenzie" class="user"> Mackenzie
                     <input id="gunter" type="checkbox" name="user" value="Gunter" class="user"> Gunter
                     <input id="iveta" type="checkbox" name="user" value="Iveta" class="user"> Iveta
@@ -27,7 +28,11 @@
                     <input id="input-field" type="text" placeholder="Enter message here">
                     <button id="clear-button" class="btn btn-danger">Clear</button>
                 </div>
-                <div id="options" class="checkboxes">
+            </div>
+<!-- End Message Entry Feature -->
+
+<!-- Begin User Options Checkboxes -->
+<div id="options" class="checkboxes">
                 <input id="theme" type="checkbox" name="theme" value="">Theme
                 <input id="text" type="checkbox" name="text" value="">Text
                 <input id="custom" type="checkbox" data-toggle="modal" data-target="#customModal" />
@@ -35,7 +40,8 @@
             </div>
             </div>
         </div>
-        <!-- Modal -->
+<!-- End User Options Checkboxes -->
+<!-- Begin Modal Feature -->
         <div class="modal fade modalBg" id="customModal" tabindex="-1" role="dialog" aria-labelledby="themeModal"
             aria-hidden="true">
             <div class="modal-dialog">
@@ -50,9 +56,11 @@
                         <input id="tinderRed" type="checkbox" class="modalBox">
                         <label for="tinderRed" class="label">&nbsp; Tinder Heart Red</label> <br />
                         <input id="plentyBlue" type="checkbox" class="modalBox">
-                        <label for="plentyBlue" class="label">&nbsp; Plenty of Blue</label> <br />
+                        <label for="plentyBlue" class="label">&nbsp; Dallas Cowboys Blue</label> <br />
                         <input id="matchOrange" type="checkbox" class="modalBox">
-                        <label for="matchOrange" class="label">&nbsp; Match Stick Orange</label>
+                        <label for="matchOrange" class="label">&nbsp; Pumpkin Spice</label> <br />
+                        <input id="pooJoke" type="checkbox" class="modalBox">
+                        <label for="pooJoke" class="label">&nbsp; Callan Theme</label>
                     </div>
                     <div class="modal-footer">
                         <button id="closeButton" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -61,15 +69,23 @@
                 </div>
             </div>
         </div>
+<!-- End Modal Feature -->
+<!-- Begin Print to DOM DIV for Site JS -->
         <div id="message-box" class="ml-5 mr-5"></div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/af.js"></script>
+</div>
+<!-- End Print to DOM DIV for Site JS -->
+
+
+<!-- Bootstrap Specific JS Links -->
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<!-- Website Specific Custom JS Links -->
     <script src="./javascripts/Data/data.js" type="module"></script>
     <script src="./javascripts/components/navBar.js" type="module"></script>
     <script src="./javascripts/components/options.js" type="module"></script>

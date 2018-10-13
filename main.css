@@ -12,23 +12,19 @@ body,
     margin: 2%;
 }
 
-.flipTheme {
-    background-color: grey;
-    color: rgba(4, 184, 165);
-}
-
 #input-field {
+    height: 10%;
+    width: 65%;
     border: 2px black;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
     color: black;
-    height: 11%;
-    width: 65%;
     padding: 1%;
+    font-size: 1em;
     margin: 2%;
     margin-top: 4%;
-    
 }
+
 .checkboxes input {
   margin: 0 5px 0 5px;
 }
@@ -38,17 +34,27 @@ body,
     margin-top: 5px;
   }
 
-#clear-button{
+#clear-button {
+
     height: 10%;
-    margin-top: 4%;
-    margin-right: 3%;
+    width:10%;
+    border: 2px black;
+    border-radius: 10px;
     padding-right: 25px;
     padding-left : 20px;
+    font-size: 1.75em;
+    margin-top: 4%;
+    margin-right: 3%;
 }
+
 #names {
     margin-left: 38%;
     margin-top: 2%;
-      
+}
+
+#options {
+    margin-left: 70%;
+    padding-bottom: 2%;
 }
 
 .header-wrapper {
@@ -57,11 +63,6 @@ body,
 
 .nav-wrapper {
     background-color: black;
-}
-
-#options {
-    margin-left: 70%;
-    padding-bottom: 2%;
 }
 
 .label {
@@ -88,22 +89,69 @@ body,
     background-color: rgba(4, 184, 165);
 }
 
+.flipTheme {
+    background-color: grey;
+    color: rgba(4, 184, 165);
+}
+
 .bumbleTheme {
-    background-color: rgb(245, 245, 31);
-    color: black;
+    background-color: rgb(255,249,51);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: .50px black;
+   text-shadow:
+    .25px .25px 0 #000,
+    -.25px -.25px 0 #000,  
+    .25px -.25px 0 #000,
+    -.25px .25px 0 #000,
+    .25px .25px 0 #000;
 }
 
 .tinderTheme {
     background-color: rgb(241, 31, 31);
     color: white;
+    -webkit-text-stroke: .50px black;
+    text-shadow:
+     .25px .25px 0 #000,
+     -.25px -.25px 0 #000,  
+     .25px -.25px 0 #000,
+     -.25px .25px 0 #000,
+     .25px .25px 0 #000;
 }
 
 .plentyTheme {
-    background-color: rgb(61, 86, 224);
-    color: white;
+    background-color: rgb(0,53,148);
+    color: rgb(134,147,151);
+    -webkit-text-stroke: .50px black;
+    text-shadow:
+     .25px .25px 0 #000,
+     -.25px -.25px 0 #000,  
+     .25px -.25px 0 #000,
+     -.25px .25px 0 #000,
+     .25px .25px 0 #000;
 }
 
 .matchTheme {
     background-color: orange;
-    color: black;
+    color: rgb(255, 255, 255);
+    stroke: 2px;
+    -webkit-text-stroke: .50px black;
+    text-shadow:
+     .25px .25px 0 #000,
+     -.25px -.25px 0 #000,  
+     .25px -.25px 0 #000,
+     -.25px .25px 0 #000,
+     .25px .25px 0 #000;
+}
+
+.callanTheme {
+    background-image: url("./images/poo.jpg");
+    color: rgb(255, 255, 255);
+    stroke: 2px;
+    -webkit-text-stroke: .50px black;
+    text-shadow:
+     .25px .25px 0 #000,
+     -.25px -.25px 0 #000,  
+     .25px -.25px 0 #000,
+     -.25px .25px 0 #000,
+     .25px .25px 0 #000;
 }

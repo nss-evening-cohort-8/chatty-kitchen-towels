@@ -1,21 +1,21 @@
-import {setCharacters,detailsBuilder,choices} from '../components/string.js'
+import { setCharacters, detailsBuilder, choices } from '../components/string.js'
 
-function executeThisCodeAfterFileLoaded () {
-    const data = JSON.parse(this.responseText); 
+function executeThisCodeAfterFileLoaded() {
+    const data = JSON.parse(this.responseText);
     setCharacters(data.messages);
     detailsBuilder(choices)
 }
 
-function executeThisCodeIfXhrFails () {
+function executeThisCodeIfXhrFails() {
     console.log("Shit don't do Good");
 }
 
 const getMessages = () => {
     let myRequest = new XMLHttpRequest();
     myRequest.addEventListener('load', executeThisCodeAfterFileLoaded);
-    myRequest.addEventListener('error',executeThisCodeIfXhrFails);
-    myRequest.open('GET', './db/names.json'); 
+    myRequest.addEventListener('error', executeThisCodeIfXhrFails);
+    myRequest.open('GET', './db/names.json');
     myRequest.send();
 };
 
-export {getMessages};
+export { getMessages };

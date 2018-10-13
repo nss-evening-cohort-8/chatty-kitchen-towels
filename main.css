@@ -50,7 +50,7 @@ body,
 }
 
 .bumbleTheme {
-    background-color: rgb(245, 245, 31);
+    background-color: rgb(255,249,51);
     color: black;
 }
 
@@ -67,4 +67,9 @@ body,
 .matchTheme {
     background-color: orange;
     color: black;
+}
+
+.callanTheme {
+    background-color: brown;
+    color: green;
 }

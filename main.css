@@ -13,8 +13,8 @@ body,
 }
 
 .flipTheme {
-    background-color: gainsboro;
-    color: darkcyan;
+    background-color: grey;
+    color: rgba(4, 184, 165);
 }
 
 #input-field {
@@ -22,21 +22,22 @@ body,
     border-radius: 5px;
     background-color: white;
     color: black;
-    height: 10%;
-    width: 75%;
+    height: 11%;
+    width: 65%;
     padding: 1%;
-    margin: 1%;
+    margin: 2%;
     margin-top: 4%;
     
 }
 #clear-button{
-    height: 17%;
-    margin-top: 20px;
-    padding-right:20px;
-    padding-left :20px;
+    height: 10%;
+    margin-top: 4%;
+    margin-right: 3%;
+    padding-right: 25px;
+    padding-left : 20px;
 }
 #names {
-    margin-left: 35%;
+    margin-left: 38%;
     margin-top: 2%;
       
 }
@@ -44,6 +45,11 @@ body,
 .header-wrapper {
     padding-top: 292px;
 }
+
+.nav-wrapper {
+    background-color: black;
+}
+
 #options {
     margin-left: 70%;
     padding-bottom: 2%;

@@ -39,4 +39,7 @@ const switchTheme = () => {
 flipTheme.addEventListener('click', switchTheme);
 
 
+
+
+
 export {enlargeText, switchTheme};

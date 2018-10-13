@@ -38,8 +38,4 @@ const switchTheme = () => {
 // fontSize.onclick = textChecked
 flipTheme.addEventListener('click', switchTheme);
 
-
-
-
-
 export {enlargeText, switchTheme};

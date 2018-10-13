@@ -20,5 +20,4 @@ const activateDeletes = () => {
   }
 }
 
-
 export {activateDeletes}

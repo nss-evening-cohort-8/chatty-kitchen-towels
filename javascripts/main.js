@@ -13,6 +13,5 @@ const initializeApp = () => {
     themeChanger();
     inputString();
     activateClearButton();
-    customTheme();
  }
  initializeApp();

@@ -45,6 +45,9 @@ const inputString = () => {
             // Adding new object to array  
             choices.unshift(createdMessage);
             detailsBuilder(choices);
+            if(choices.length > 19){
+            choices.pop();
+            }
             userInput.value = "";
             uncheck();
             enableClearButton();
@@ -59,12 +62,13 @@ const enableClearButton = () => {
     }
 }
 
-const messageLimit =()=>{
-    if(choices.length > 20){
-                let deleteLastArray = choices.pop();
-                return deleteLastArray;
-                }
-    }
+// const messageLimit =()=>{
+//     if(choices.length > 20){
+//         let x = choices.pop();
+//         console.log(x);
+//     }
+// }
+// messageLimit();
 
 export{inputString, choices};
 

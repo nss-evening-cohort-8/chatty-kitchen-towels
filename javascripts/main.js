@@ -10,8 +10,7 @@ const initializeApp = () => {
     enlargeText();
     switchTheme();
     inputString();
-    themeChanger();
-    inputString();
     activateClearButton();
- }
- initializeApp();
+    themeChanger();
+}
+initializeApp();

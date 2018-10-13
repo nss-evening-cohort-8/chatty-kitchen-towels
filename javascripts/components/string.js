@@ -1,6 +1,6 @@
-import {printToDom} from "../helpers/util.js"
-import {activateDeletes} from "./delete.js"
-import {messEdit} from "../components/edit.js"
+import { printToDom } from "../helpers/util.js"
+import { activateDeletes } from "./delete.js"
+import { messEdit } from "../components/edit.js"
 
 let choices = [];
 
@@ -8,11 +8,11 @@ const setCharacters = (newArray) => {
   choices = newArray;
   console.log(choices);
   console.log(newArray);
-  };
+};
 
 const getmessagez = () => {
   return choices;
-  }
+}
 
 const detailsBuilder = (messagesArray) => {
   let domString = '';

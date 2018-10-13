@@ -41,7 +41,7 @@ const inputString = () => {
             counterX++;
             // returns value of input field
             let value = userInput.value;
-            let createdMessage = {messageId:"message"+counterX, name:user, message:value, createdAt:moment().calendar()};
+            let createdMessage = { messageId: "message" + counterX, name: user, message: value, createdAt: moment().calendar() };
             // Adding new object to array  
             choices.unshift(createdMessage);
             detailsBuilder(choices);
@@ -61,5 +61,3 @@ const enableClearButton = () => {
 }
 
 export { inputString, choices };
-
-

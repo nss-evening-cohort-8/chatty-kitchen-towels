@@ -12,34 +12,39 @@ body,
     margin: 2%;
 }
 
-.flipTheme {
-    background-color: grey;
-    color: rgba(4, 184, 165);
-}
-
 #input-field {
+    height: 10%;
+    width: 65%;
     border: 2px black;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
     color: black;
-    height: 11%;
-    width: 65%;
     padding: 1%;
+    font-size: 1em;
     margin: 2%;
     margin-top: 4%;
-    
 }
-#clear-button{
+
+#clear-button {
     height: 10%;
-    margin-top: 4%;
-    margin-right: 3%;
+    width:10%;
+    border: 2px black;
+    border-radius: 10px;
     padding-right: 25px;
     padding-left : 20px;
+    font-size: 1.75em;
+    margin-top: 4%;
+    margin-right: 3%;
 }
+
 #names {
     margin-left: 38%;
     margin-top: 2%;
-      
+}
+
+#options {
+    margin-left: 70%;
+    padding-bottom: 2%;
 }
 
 .header-wrapper {
@@ -48,11 +53,6 @@ body,
 
 .nav-wrapper {
     background-color: black;
-}
-
-#options {
-    margin-left: 70%;
-    padding-bottom: 2%;
 }
 
 .label {
@@ -77,6 +77,11 @@ body,
 
 .modal-footer {
     background-color: rgba(4, 184, 165);
+}
+
+.flipTheme {
+    background-color: grey;
+    color: rgba(4, 184, 165);
 }
 
 .bumbleTheme {

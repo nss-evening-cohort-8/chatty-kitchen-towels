@@ -1,5 +1,6 @@
 import {printToDom} from "../helpers/util.js"
 import {activateDeletes} from "./delete.js"
+import {messEdit} from "../components/edit.js"
 
 let choices = [];
 
@@ -13,7 +14,6 @@ let getmessagez = ()=>{
   return choices;
   }
 
-
 const detailsBuilder = (messagesArray) => {
   let domString = '';
   messagesArray.forEach((message) => {
@@ -23,7 +23,7 @@ const detailsBuilder = (messagesArray) => {
     domString += `<h3>${message.name}</h3>`
     domString += `</div>`
     domString += `<div>`
-    domString += `<h5>${message.message}   ${message.createdAt}</h5>`
+    domString += `<h5 id="${message.messageId}3">${message.message}   ${message.createdAt}</h5>`
     domString += `</div>`
     domString += `<div class"mb-4"> `
     domString += `<button id="${message.messageId}1" type="button" class="newMessage1 btn btn-success">EDIT</button>`
@@ -34,7 +34,7 @@ const detailsBuilder = (messagesArray) => {
   });
   printToDom(domString);
   activateDeletes();
-  // sortEvents();
+  messEdit();
 };
 
 export { setCharacters, detailsBuilder, choices, getmessagez }

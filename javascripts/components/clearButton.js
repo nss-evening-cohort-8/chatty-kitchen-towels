@@ -7,11 +7,7 @@ const activateClearButton = () => {
       clearButton.addEventListener("click", () => {
         const messageBox = document.getElementById('message-box');
         messageBox.innerHTML = '';
-        // choices.length=0;
-        // grabbing prepopulate messages
-        let originalArray = choices.slice(choices.length-6, choices.length);
-        setCharacters(originalArray);
-        getmessagez(); 
+        choices.length=0;
         clearButton.disabled = true;      
       })
     }

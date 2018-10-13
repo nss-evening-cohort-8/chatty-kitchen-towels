@@ -10,7 +10,8 @@ body,
     background-image: url("./images/background.png");
     background-attachment: fixed;
     padding: 1%;
-    margin: 2%;
+    margin: 1%;
+    padding-bottom: 2%;
 }
 
 #input-field {
@@ -49,17 +50,26 @@ body,
 }
 
 #names {
-    margin-left: 38%;
+    margin-left: 35%;
     margin-top: 1%;
+    position: absolute;
+    left: 35px;
+    top: 15px;
+    z-index: 1;
 }
 
 #options {
     margin-left: 70%;
     padding-bottom: 2%;
+    position: absolute;
+    left: 2px;
+    top: 125px;
+    z-index: 1;
+    
 }
 
 .header-wrapper {
-    padding-top: 292px;
+    padding-top: 245px;
 }
 
 .nav-wrapper {
@@ -91,8 +101,10 @@ body,
 }
 
 .flipTheme {
-    background-color: grey;
+    background-color: lightslategray;
     color: rgba(4, 184, 165);
+    background-image: url("./images/flip_background.png");
+    background-attachment: fixed;
 }
 
 .bumbleTheme {

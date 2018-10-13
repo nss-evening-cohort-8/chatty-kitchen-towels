@@ -28,19 +28,18 @@
                     <input id="input-field" type="text" placeholder="Enter message here">
                     <button id="clear-button" class="btn btn-danger">Clear</button>
                 </div>
+                <!-- Begin User Options Checkboxes -->
+            
+                <div id="options" class="checkboxes">
+                        <input id="theme" type="checkbox" name="theme" value="">Theme
+                        <input id="text" type="checkbox" name="text" value="">Text
+                        <input id="custom" type="checkbox" data-toggle="modal" data-target="#customModal" />
+                        <label for="custom">Custom</label>
+                    </div>
+                     <!-- End User Options Checkboxes -->
             </div>
-            <!-- End Message Entry Feature -->
-
-            <!-- Begin User Options Checkboxes -->
-            <div id="options" class="checkboxes">
-                <input id="theme" type="checkbox" name="theme" value="">Theme
-                <input id="text" type="checkbox" name="text" value="">Text
-                <input id="custom" type="checkbox" data-toggle="modal" data-target="#customModal" />
-                <label for="custom">Custom</label>
-            </div>
+            <!-- End Message Entry Feature -->    
         </div>
-
-        <!-- End User Options Checkboxes -->
         <!-- Begin Modal Feature -->
         <div class="modal fade modalBg" id="customModal" tabindex="-1" role="dialog" aria-labelledby="themeModal"
             aria-hidden="true">

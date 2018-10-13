@@ -12,26 +12,28 @@
 
 <body>
     <div id="optionsResults">
-        <div class="nav-wrapper fixed-top">
-            <div id="names">
-                <input id="xavier" type="checkbox" name="user" value="Xavier" class="user"> Xavier
-                <input id="joanna" type="checkbox" name="user" value="Joann" class="user"> Joanna
-                <input id="mackenzie" type="checkbox" name="user" value="MacKenzie" class="user"> Mackenzie
-                <input id="gunter" type="checkbox" name="user" value="Gunter" class="user"> Gunter
-                <input id="iveta" type="checkbox" name="user" value="Iveta" class="user"> Iveta
-                <input id="sven" type="checkbox" name="user" value="Sven" class="user"> Sven
+        <div class="header-wrapper">
+            <div class="nav-wrapper fixed-top">
+                <div id="names">
+                    <input id="xavier" type="checkbox" name="user" value="Xavier" class="user"> Xavier
+                    <input id="joanna" type="checkbox" name="user" value="Joann" class="user"> Joanna
+                    <input id="mackenzie" type="checkbox" name="user" value="MacKenzie" class="user"> Mackenzie
+                    <input id="gunter" type="checkbox" name="user" value="Gunter" class="user"> Gunter
+                    <input id="iveta" type="checkbox" name="user" value="Iveta" class="user"> Iveta
+                    <input id="sven" type="checkbox" name="user" value="Sven" class="user"> Sven
+                </div>
+                <div class="d-flex flex-row justify-content-around m-3" id="navigation">
+                    <img class="logo" src="./images/chatty.png" alt="logo">
+                    <input id="input-field" type="text" class="w-50 h-25" placeholder="Enter message here">
+                    <button id="clear-button" class="btn btn-danger">Clear</button>
+                </div>
             </div>
-            <div class="d-flex flex-row justify-content-around m-3" id="navigation">
-                <img class="logo" src="./images/chatty.png" alt="logo">
-                <input id="input-field" type="text" class="w-50 h-25" placeholder="Enter message here">
-                <button id="clear-button" class="btn btn-danger">Clear</button>
+            <div id="options">
+                <input id="theme" type="checkbox" name="theme" value="">Theme
+                <input id="text" type="checkbox" name="text" value="">Text
+                <input id="custom" type="checkbox" data-toggle="modal" data-target="#customModal" />
+                <label for="custom">Additional Themes</label>
             </div>
-        </div>
-        <div id="options">
-            <input id="theme" type="checkbox" name="theme" value="">Theme
-            <input id="text" type="checkbox" name="text" value="">Text
-            <input id="custom" type="checkbox" data-toggle="modal" data-target="#customModal" />
-            <label for="custom">Additional Themes</label>
         </div>
         <!-- Modal -->
         <div class="modal fade modalBg" id="customModal" tabindex="-1" role="dialog" aria-labelledby="themeModal"

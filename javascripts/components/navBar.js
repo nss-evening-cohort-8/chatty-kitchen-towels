@@ -45,13 +45,15 @@ const inputString = () => {
             // Adding new object to array  
             choices.unshift(createdMessage);
             detailsBuilder(choices);
+            if(choices.length > 19){
+            choices.pop();
+            }
             userInput.value = "";
             uncheck();
             enableClearButton();
         }
     })
 }
-
 // function to Activate Clear Button
 const enableClearButton = () => {
     const clearButton = document.getElementById('clear-button');
@@ -60,4 +62,13 @@ const enableClearButton = () => {
     }
 }
 
-export { inputString, choices };
+// const messageLimit =()=>{
+//     if(choices.length > 20){
+//         let x = choices.pop();
+//         console.log(x);
+//     }
+// }
+// messageLimit();
+
+export{inputString, choices};
+

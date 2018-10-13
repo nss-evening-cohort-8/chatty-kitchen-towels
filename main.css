@@ -95,5 +95,6 @@ body,
 
 .callanTheme {
     background-color: brown;
-    color: green;
+    background-image: url("./images/poo.jpg");
+    color: rgb(214, 211, 20);
 }

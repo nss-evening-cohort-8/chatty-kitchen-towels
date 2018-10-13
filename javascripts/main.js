@@ -12,6 +12,6 @@ import { activateClearButton } from "./components/clearButton.js";
     inputString();
     activateClearButton();
     customTheme();
-    untick();
+    // untick();
  }
  initializeApp();

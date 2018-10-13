@@ -47,10 +47,19 @@ const inputString = () => {
             detailsBuilder(choices);
             userInput.value = "";
             uncheck();
+            enableClearButton();
         }
     })
 }
 
-export{inputString};
+// function to Activate Clear Button
+const enableClearButton=()=> {
+    const clearButton = document.getElementById('clear-button');
+        if(clearButton.disabled===true) {
+            clearButton.disabled = false; 
+        }
+    }
+
+export{inputString, choices};
 
 

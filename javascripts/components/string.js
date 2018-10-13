@@ -9,7 +9,7 @@ const setCharacters = (newArray) => {
   console.log(newArray);
   };
 
-const getmessagez = ()=>{
+let getmessagez = ()=>{
   return choices;
   }
 

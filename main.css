@@ -1,6 +1,7 @@
 body,
 .card {
     background-color: black;
+    background-image: url("./images/background.png");
     color: white;
 }
 
@@ -15,12 +16,22 @@ body,
     color: darkcyan;
 }
 
+#input-field {
+    border: 2px cyan;
+    background-color: black;
+    color: white;
+    height: 15%;
+    width: 65%;
+    margin: 1%;
+    padding-top: 2%;
+}
+
 #names {
-    margin-left: 46%;
-    padding-top: 2%;   
+    margin-left: 35%;
+      
 }
 
 #options {
     margin-left: 80%;
-    padding-bottom: 2%;
+    
 }

@@ -7,14 +7,28 @@ let bumbleTheme = document.getElementById('bumbleBee')
 let tinderTheme = document.getElementById('tinderRed')
 let plentyTheme = document.getElementById('plentyBlue')
 let matchTheme = document.getElementById('matchOrange')
+let callanTheme = document.getElementById('pooJoke')
 
+// const bumbleSwap = () => {
+//     const checkBox = document.getElementById('bumbleBee');
+//     document.getElementById('body').toggleClass('bumbleTheme');
+//     document.getElementById('optionsResults').toggleClass('bumbleTheme');
+//     document.getElementById('options').toggleClass('bumbleTheme');
+//     document.getElementById('message-box').toggleClass('bumbleTheme');
+//     };
+
+// Function to Untick the Additional Theme Box //
 const untick = () => {
-    $('#closeButton').click(function (e) {
-        $('input:checked').removeAttr('checked');
-        e.preventDefault();
-    });
-    untick();
-};
+    const userOptions = document.getElementById('custom');
+    const userSelections = document.getElementsByClassName('modalBox');
+    if (userSelections.checked === true) {
+        userOptions.checked = true
+    }
+    else {
+        (userSelections.checked === false)
+        userOptions.checked = false;
+    }
+}
 
 // Function To Change to Additional Themes if Checked //
 const customTheme = () => {
@@ -22,26 +36,30 @@ const customTheme = () => {
         theme.className = 'bumbleTheme'
     }
     else if
-        (tinderTheme.checked === true) {
+    (tinderTheme.checked === true) {
         theme.className = 'tinderTheme'
     }
     else if
-        (plentyTheme.checked === true) {
+    (plentyTheme.checked === true) {
         theme.className = 'plentyTheme'
     }
     else if
-        (matchTheme.checked === true) {
+    (matchTheme.checked === true) {
         theme.className = 'matchTheme'
+    }
+    else if
+    (callanTheme.checked === true) {
+        theme.className = 'callanTheme'
     }
     else {
         theme.className = 'main'
     }
+    untick();
 }
 
-// Event Listeners //
-bumbleTheme.addEventListener('click', customTheme);
-tinderTheme.addEventListener('click', customTheme);
-plentyTheme.addEventListener('click', customTheme);
-matchTheme.addEventListener('click', customTheme);
+const themeChanger = () => {
+    const executeThemeChanger = document.getElementById('closeButton')
+    executeThemeChanger.addEventListener('click', customTheme);
+}
 
-export { customTheme, untick }
+export { themeChanger }

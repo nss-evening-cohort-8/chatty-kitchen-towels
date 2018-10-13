@@ -7,10 +7,10 @@ let fontSize = document.getElementById('text')
 // Function To Change Font Size If Checked //
 const enlargeText = () => {
     if (fontSize.checked === true) {
-      text.style.fontSize = '20px'; 
+        text.style.fontSize = '20px';
     }
     else {
-        text.style.fontSize = '14px'; 
+        text.style.fontSize = '14px';
     }
 }
 
@@ -42,4 +42,4 @@ flipTheme.addEventListener('click', switchTheme);
 
 
 
-export {enlargeText, switchTheme};
+export { enlargeText, switchTheme };

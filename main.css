@@ -80,21 +80,63 @@ body,
 }
 
 .bumbleTheme {
-    background-color: rgb(245, 245, 31);
-    color: black;
+    background-color: rgb(255,249,51);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: .50px black;
+   text-shadow:
+    .25px .25px 0 #000,
+    -.25px -.25px 0 #000,  
+    .25px -.25px 0 #000,
+    -.25px .25px 0 #000,
+    .25px .25px 0 #000;
 }
 
 .tinderTheme {
     background-color: rgb(241, 31, 31);
     color: white;
+    -webkit-text-stroke: .50px black;
+    text-shadow:
+     .25px .25px 0 #000,
+     -.25px -.25px 0 #000,  
+     .25px -.25px 0 #000,
+     -.25px .25px 0 #000,
+     .25px .25px 0 #000;
 }
 
 .plentyTheme {
-    background-color: rgb(61, 86, 224);
-    color: white;
+    background-color: rgb(0,53,148);
+    color: rgb(134,147,151);
+    -webkit-text-stroke: .50px black;
+    text-shadow:
+     .25px .25px 0 #000,
+     -.25px -.25px 0 #000,  
+     .25px -.25px 0 #000,
+     -.25px .25px 0 #000,
+     .25px .25px 0 #000;
 }
 
 .matchTheme {
     background-color: orange;
-    color: black;
+    color: rgb(255, 255, 255);
+    stroke: 2px;
+    -webkit-text-stroke: .50px black;
+    text-shadow:
+     .25px .25px 0 #000,
+     -.25px -.25px 0 #000,  
+     .25px -.25px 0 #000,
+     -.25px .25px 0 #000,
+     .25px .25px 0 #000;
+}
+
+.callanTheme {
+    background-image: url("./images/poo.jpg");
+    color: rgb(255, 255, 255);
+    stroke: 2px;
+    -webkit-text-stroke: .50px black;
+    text-shadow:
+     .25px .25px 0 #000,
+     -.25px -.25px 0 #000,  
+     .25px -.25px 0 #000,
+     -.25px .25px 0 #000,
+     .25px .25px 0 #000;
 }

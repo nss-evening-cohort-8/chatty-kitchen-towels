@@ -8,7 +8,7 @@
     getMessages();
     enlargeText();
     switchTheme();
-    inputString();
+    inputString(); 
     customTheme();
     untick();
  }

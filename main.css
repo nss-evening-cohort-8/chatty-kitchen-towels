@@ -25,7 +25,17 @@ body,
     margin-top: 4%;
 }
 
+.checkboxes input {
+  margin: 0 5px 0 5px;
+}
+
+.namesBoxes input {
+    margin: 0 5px 0 5px;
+    margin-top: 5px;
+  }
+
 #clear-button {
+
     height: 10%;
     width:10%;
     border: 2px black;

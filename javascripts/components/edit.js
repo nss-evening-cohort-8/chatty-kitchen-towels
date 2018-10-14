@@ -11,24 +11,38 @@ const messEdit = () => {
     element.addEventListener("click", (e) => {
       let buttonClickedId = e.target.parentNode.parentNode.childNodes[1].childNodes[0].id;
       editChange(buttonClickedId);
-      myInput.value = e.target.parentNode.parentNode.childNodes[1].childNodes[0].innerHTML ;
+      let buttonPath = e.target.parentNode.parentNode.childNodes[1].childNodes[0].innerHTML ;
+      myInput.value = buttonPath;
+      //  return myInput.value;
     })
   }
 }
 
+const clearInput = () => {
+   document.getElementById("input-field").value = '';
+};
+
 function editChange(bio) {
-  document.getElementById("input-field").value = '';
   let outputEl = document.getElementById(bio);
   getFocus();
   let fieldEl = document.getElementById("input-field");
   fieldEl.addEventListener("keyup", function (event) {
   })
+  console.log(outputEl);
+  // setAsVarable(outputEl);
  window.value = outputEl;
 };
 
+// let setAsVarable = (varableToSet) => {
+//   let x = varableToSet;
+//   console.log(x);
+//   return x;
+// }
+
 let findElement = () => {
   window.value.innerHTML = event.target.value;
-  // could take this information and append the array and then reprint it?
+  clearInput();
+  console.log(window.value);
 };
 
 export { messEdit, findElement}

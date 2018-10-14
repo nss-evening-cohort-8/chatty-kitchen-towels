@@ -52,7 +52,22 @@ const inputString = () => {
             uncheck();
             enableClearButton();
         }else if(e.keyCode ===13){
-             findElement();
+            //EVERYTHING BELOW THIS IS NEW AND IS A COPY OF SOME OF THE ABOVE
+            let user = userName();
+            counterX++;
+            // returns value of input field
+            let value = userInput.value;
+            let createdMessage = { messageId: "message" + counterX, name: user, message: value, createdAt: moment().calendar() };
+            // Adding new object to array  
+            choices.unshift(createdMessage);
+            detailsBuilder(choices);
+            if(choices.length > 19){
+            choices.pop();
+            }
+            userInput.value = "";
+            uncheck();
+            enableClearButton();
+            // findElement();
         }
     })
 }

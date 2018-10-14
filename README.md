@@ -12,4 +12,10 @@ Chat(e) is an internal messaging application where users can craft messages with
 ## How to Run
 1. Go to: `https://www.npmjs.com/package/http-server` and install "http-server".  
 2. Navigate to the project folder in command line interface and type: `http-server -p 8080`  
-3. This will show at: `http://localhost:8080` in your internet browser.  
+3. This will show at: `http://localhost:8080` in your internet browser. 
+
+## Chat(e) Contributors
+<a href="https://github.com/ripalpate">Ripal Patel</a>
+<a href="https://github.com/ke4tri">Wayne Collier</a>
+<a href="https://github.com/Shijax">Matthew Jackson</a>
+<a href="https://github.com/JonathanPMohan">Jonathan Mohan</a>

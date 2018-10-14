@@ -1,22 +1,21 @@
+## Chat(e)
+Chat(e) is an internal messaging application where users can craft messages within a community setting via a shared message board. Add, edit and delete existing messages, or clear the entire populated message list in a flash. With the click of a button you can adjust your theme on the fly, enlarge your text or even pick from 5 pre programmed custom themes.  
+
 ![main screenshot](./images/screenshot.png)
 
-# Chatty Group Project
-Your group will be creating a chat application. The features your team will build have already been added to your backlog in the "projects" section of this repo. This application should demonstrate your skills in:
-- Modular code
-- Dependency chaining
-- Asynchronous code
-- DOM interaction
-- Debugging
+## Technologies Used
+* Bootstrap 4
+* HTML
+* CSS
+* Javascript
 
-## Requirements
-* Use Bootstrap
-* Balanced GitHub contributions
-* Completed README
-* No Grunt errors
-* Use ES6 Modules
+## How to Run
+1. Go to: `https://www.npmjs.com/package/http-server` and install "http-server".  
+2. Navigate to the project folder in command line interface and type: `http-server -p 8080`  
+3. This will show at: `http://localhost:8080` in your internet browser. 
 
-## Interacting With Your Product Owner
-Your group has been designated a product owner (one of the instructors). This product owner has the overall vision of the application and must approve your tickets before you start working on them. When you complete the MVP tickets in your backlog, you should reach out to your product owner to recieve tickets for additional features. Note that this project is often used as a portfolio project for students, so you and your team should push yourselves to get to the "game changer" bonus features, but only after you have a strong MVP.
-
-
-Check out the [simple wireframe](https://app.moqups.com/chortlehoort/uGBbLbK46Y/view/page/a3bd0c733) for this application on Moqups.com. You can make your final interface as fancy as you like, but keep the general layout similar to the wireframe.
+## Chat(e) Contributors
+<a href="https://github.com/ripalpate">Ripal Patel</a>
+<a href="https://github.com/ke4tri">Wayne Collier</a>
+<a href="https://github.com/Shijax">Matthew Jackson</a>
+<a href="https://github.com/JonathanPMohan">Jonathan Mohan</a>

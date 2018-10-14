@@ -1,8 +1,6 @@
 import { choices, detailsBuilder, getmessagez } from "./string.js";
 import {findElement} from "./edit.js"
 
-
-
 const userName = () => {
     const nameDiv = document.getElementById("names");
     const inputCollection = nameDiv.getElementsByTagName("input");

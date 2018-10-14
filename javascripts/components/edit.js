@@ -1,3 +1,4 @@
+import {choices} from "../components/string.js"
 let myInput = document.getElementById("input-field");
 window.value= '';
 function getFocus() {
@@ -29,20 +30,24 @@ function editChange(bio) {
   let fieldEl = document.getElementById("input-field");
   fieldEl.addEventListener("keyup", function (event) {
   })
-  console.log(outputEl);
  window.value = outputEl;
 };
-
+let i = 0;
 let findElement = () => {
   // window.value.innerHTML = event.target.value;
-  let gutsEqual = window.value.innerHTML
+    // console.log(createdMessage);
+  // console.log(choices) 
+  let gutsEqual = event.target.value;
   let userEdit = window.value.parentElement.parentElement.childNodes[0].childNodes[0].innerHTML;
   let message_id = window.value.parentElement.parentElement.childNodes[1].childNodes[0].id
   let createdMessage = { messageId: message_id, name: userEdit, message: gutsEqual, createdAt: moment().calendar() };
-  
-  
-  // clearInput();
-  // console.log(window.value);
+  let i=0;
+    for(i=0;i<choices;i++){
+      if(choices[i].messageId === message_id){
+      console.log(choices[i]);
+      };
+    };
+
 };
 
 export { messEdit, findElement}

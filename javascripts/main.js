@@ -1,4 +1,5 @@
 import { getMessages } from "../javascripts/Data/data.js"
+import { getNotes } from "../javascripts/Data/badWordsData.js"
 import { inputString } from "./components/navBar.js"
 import { enlargeText, switchTheme } from "../javascripts/components/options.js"
 import { themeChanger } from "../javascripts/components/custom.js"
@@ -12,5 +13,6 @@ const initializeApp = () => {
     inputString();
     activateClearButton();
     themeChanger();
+    getNotes();
 }
 initializeApp();

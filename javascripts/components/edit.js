@@ -20,6 +20,7 @@ const messEdit = () => {
 
 const clearInput = () => {
    document.getElementById("input-field").value = '';
+  document.getElementById("input-field").blur();
 };
 
 function editChange(bio) {
@@ -29,20 +30,19 @@ function editChange(bio) {
   fieldEl.addEventListener("keyup", function (event) {
   })
   console.log(outputEl);
-  // setAsVarable(outputEl);
  window.value = outputEl;
 };
 
-// let setAsVarable = (varableToSet) => {
-//   let x = varableToSet;
-//   console.log(x);
-//   return x;
-// }
-
 let findElement = () => {
-  window.value.innerHTML = event.target.value;
-  clearInput();
-  console.log(window.value);
+  // window.value.innerHTML = event.target.value;
+  let gutsEqual = window.value.innerHTML
+  let userEdit = window.value.parentElement.parentElement.childNodes[0].childNodes[0].innerHTML;
+  let message_id = window.value.parentElement.parentElement.childNodes[1].childNodes[0].id
+  let createdMessage = { messageId: message_id, name: userEdit, message: gutsEqual, createdAt: moment().calendar() };
+  
+  
+  // clearInput();
+  // console.log(window.value);
 };
 
 export { messEdit, findElement}

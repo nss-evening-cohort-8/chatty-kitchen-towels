@@ -1,3 +1,5 @@
+let myInput = document.getElementById("input-field");
+window.value= '';
 function getFocus() {
   document.getElementById("input-field").focus();
 }
@@ -9,7 +11,7 @@ const messEdit = () => {
     element.addEventListener("click", (e) => {
       let buttonClickedId = e.target.parentNode.parentNode.childNodes[1].childNodes[0].id;
       editChange(buttonClickedId);
-      return buttonClickedId;
+      myInput.value = e.target.parentNode.parentNode.childNodes[1].childNodes[0].innerHTML ;
     })
   }
 }
@@ -19,9 +21,14 @@ function editChange(bio) {
   let outputEl = document.getElementById(bio);
   getFocus();
   let fieldEl = document.getElementById("input-field");
-  fieldEl.addEventListener("keypress", function (event) {
-    outputEl.innerHTML = event.target.value
+  fieldEl.addEventListener("keyup", function (event) {
   })
+ window.value = outputEl;
 };
 
-export { messEdit }
+let findElement = () => {
+  window.value.innerHTML = event.target.value;
+  // could take this information and append the array and then reprint it?
+};
+
+export { messEdit, findElement}

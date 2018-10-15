@@ -34,17 +34,16 @@ function editChange(bio) {
     window.value = outputEl;
 };
 
-
 let skimFunction =(varHere, varHere2) => {
   for(let t=0;t<choices.length;t++){
     // let oldId = choice["messageId"];
     if(varHere === choices[t].messageId ){
-      let replaceObj = varHere2;
+      let replaceOb = varHere2;
             // let varHere2Id = varHere2.messageId
-            choices.unshift(replaceObj)
+            choices.unshift(replaceOb)
             // clearInput();
+            return replaceOb;
     };
-    detailsBuilder(choices);
   };
 }
 
@@ -60,18 +59,10 @@ let findElement = () => {
         createdAt: moment().calendar()
     };
     skimFunction(newCleanMessId2, createdMessage);
-    // passingCMessage(createdMessage);
+    detailsBuilder(choices);
     return message_id;
 };
 
-// let removeID = (idRemove) => {
-//     let r = 0;
-//     for (r = 0; r < choices; r++) {
-//         if (choices[r].messageId === idRemove) {
-//             delete choices[r];
-//         }
-//     }
-// };
 
 // let skimFunction = (varHere, varHere2) => {
 //     choices.forEach((choice) => {
@@ -85,16 +76,6 @@ let findElement = () => {
 //         }
 //     });
 
-
-
-    // let i=0;
-    //   for(i=0;i<choices;i++){
-    //     if(choices[i].messageId === message_id){
-    //     console.log(choices[i]);
-    //     };
-    //   };
-
-// };
 
 export { messEdit, findElement}
 

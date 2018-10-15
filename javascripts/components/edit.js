@@ -34,6 +34,20 @@ function editChange(bio) {
     window.value = outputEl;
 };
 
+
+let skimFunction =(varHere, varHere2) => {
+  for(let t=0;t<choices.length;t++){
+    // let oldId = choice["messageId"];
+    if(varHere === choices[t].messageId ){
+      let replaceObj = varHere2;
+            // let varHere2Id = varHere2.messageId
+            choices.unshift(replaceObj)
+            // clearInput();
+    };
+    detailsBuilder(choices);
+  };
+}
+
 let findElement = () => {
     let gutsEqual = event.target.value;
     let userEdit = window.value.parentElement.parentElement.childNodes[0].childNodes[0].innerHTML;
@@ -50,27 +64,27 @@ let findElement = () => {
     return message_id;
 };
 
-let removeID = (idRemove) => {
-    let r = 0;
-    for (r = 0; r < choices; r++) {
-        if (choices[r].messageId === idRemove) {
-            delete choices[r];
-        }
-    }
-};
+// let removeID = (idRemove) => {
+//     let r = 0;
+//     for (r = 0; r < choices; r++) {
+//         if (choices[r].messageId === idRemove) {
+//             delete choices[r];
+//         }
+//     }
+// };
 
-let skimFunction = (varHere, varHere2) => {
-    choices.forEach((choice) => {
-        let oldId = choice["messageId"];
-        if (oldId === varHere) {
-            let replaceObj = varHere2;
-            let varHere2Id = varHere2.messageId
-            choices.unshift(replaceObj)
-            detailsBuilder(choices);
-            removeID(varHere2);
-            // clearInput();
-        }
-    });
+// let skimFunction = (varHere, varHere2) => {
+//     choices.forEach((choice) => {
+//         let oldId = choice["messageId"];
+//         if (oldId === varHere) {
+//             let replaceObj = varHere2;
+//             let varHere2Id = varHere2.messageId
+//             choices.unshift(replaceObj)
+//             detailsBuilder(choices);
+//              clearInput();
+//         }
+//     });
+
 
 
     // let i=0;
@@ -80,7 +94,7 @@ let skimFunction = (varHere, varHere2) => {
     //     };
     //   };
 
-};
+// };
 
 export { messEdit, findElement}
 

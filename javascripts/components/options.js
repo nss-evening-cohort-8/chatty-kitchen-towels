@@ -36,5 +36,5 @@ const switchTheme = () => {
 // Event Listener For The Switch ThemeCheckbox //
 flipTheme.addEventListener('click', switchTheme);
 
-// Export Functions //
+// Export Functions
 export { enlargeText, switchTheme, };

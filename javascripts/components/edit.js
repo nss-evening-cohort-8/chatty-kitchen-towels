@@ -76,7 +76,6 @@ let findElement = () => {
     skimFunction(newCleanMessId2, createdMessage);
     // detailsBuilder(choices);
     removMess();
-    console.log(choices);
     return message_id;
 };
 

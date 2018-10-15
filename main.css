@@ -11,7 +11,7 @@ body,
     background-attachment: fixed;
     padding: 1%;
     margin: 1%;
-    padding-bottom: 2%;
+    
 }
 
 #input-field {
@@ -35,6 +35,10 @@ body,
     margin: 0 5px 0 5px;
     margin-top: 5px;
   }
+
+#optionsResults {
+    padding-bottom: 2%;
+}
 
 #clear-button {
 
@@ -103,6 +107,12 @@ body,
 .flipTheme {
     background-color: lightslategray;
     color: rgba(4, 184, 165);
+    text-shadow:
+     .25px .25px 0 #000,
+     -.25px -.25px 0 #000,  
+     .25px -.25px 0 #000,
+     -.25px .25px 0 #000,
+     .25px .25px 0 #000;
     background-image: url("./images/flip_background.png");
     background-attachment: fixed;
 }

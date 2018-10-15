@@ -27,7 +27,7 @@ const detailsBuilder = (messagesArray) => {
     domString += `</div>`
     domString += `<div class"mb-4"> `
     domString += `<button id="${message.messageId}1" type="button" class="newMessage1 btn btn-info">EDIT</button>`
-    domString += `<button id="${message.messageId}2" type="button" class="newMessage2 btn btn-light ml-2">DELETE</button>`
+    domString += `<button id="${message.messageId}2" type="button" class="newMessage2 btn btn-light">DELETE</button>`
     domString += `</div>`
     domString += `</div>`
     domString += `</div>`

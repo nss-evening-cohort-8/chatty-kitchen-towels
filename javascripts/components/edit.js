@@ -18,6 +18,7 @@ let removMess = () => {
       }
     }
     detailsBuilder(choices);
+    clearInput();
 };
 
 

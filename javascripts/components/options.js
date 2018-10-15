@@ -34,12 +34,7 @@ const switchTheme = () => {
 }
 
 // Event Listener For The Switch ThemeCheckbox //
-
-// fontSize.onclick = textChecked
 flipTheme.addEventListener('click', switchTheme);
 
-
-
-
-
+// Export Functions
 export { enlargeText, switchTheme };

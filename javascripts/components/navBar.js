@@ -64,11 +64,11 @@ const enableClearButton = () => {
     }
 }
 
-const messageLimit =()=>{
-    if(choices.length > 20){
-        let x = choices.pop();
-    }
-}
-messageLimit();
+// const messageLimit =()=>{
+//     if(choices.length > 20){
+//         let x = choices.pop();
+//     }
+// }
+// messageLimit();
 
 export{inputString, choices};

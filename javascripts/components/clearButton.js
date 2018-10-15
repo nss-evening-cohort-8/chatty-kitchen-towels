@@ -1,5 +1,4 @@
 import { choices } from "../components/navBar.js";
-import { setCharacters, getmessagez } from "./string.js";
 
 const activateClearButton = () => {
   const clearButton = document.getElementById('clear-button');

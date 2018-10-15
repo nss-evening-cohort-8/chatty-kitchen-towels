@@ -10,8 +10,7 @@ body,
     background-image: url("./images/background.png");
     background-attachment: fixed;
     padding: 1%;
-    margin: 1%;
-    
+    margin: 1%; 
 }
 
 #input-field {
@@ -40,10 +39,7 @@ body,
     padding-bottom: 2%;
 }
 
-
-
 #clear-button {
-
     height: 10%;
     width:10%;
     border: 2px black;
@@ -56,22 +52,21 @@ body,
 }
 
 #names {
-    margin-left: 35%;
+    margin-left: 32%;
     margin-top: 1%;
     position: absolute;
-    left: 35px;
+    left: 1px;
     top: 15px;
     z-index: 1;
 }
 
 #options {
-    margin-left: 70%;
+    margin-left: 72.5%;
     padding-bottom: 2%;
     position: absolute;
     left: 2px;
-    top: 125px;
-    z-index: 1;
-    
+    top: 145px;
+    z-index: 1; 
 }
 
 .header-wrapper {
@@ -123,7 +118,7 @@ body,
     background-color: rgb(255,249,51);
     color: rgb(255, 255, 255);
     -webkit-text-stroke: .50px black;
-   text-shadow:
+    text-shadow:
     .25px .25px 0 #000,
     -.25px -.25px 0 #000,  
     .25px -.25px 0 #000,

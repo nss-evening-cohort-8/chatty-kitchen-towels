@@ -6,8 +6,6 @@ let choices = [];
 
 const setCharacters = (newArray) => {
   choices = newArray;
-  console.log(choices);
-  console.log(newArray);
 };
 
 const getmessagez = () => {
@@ -23,11 +21,11 @@ const detailsBuilder = (messagesArray) => {
     domString += `<h3>${message.name}</h3>`
     domString += `</div>`
     domString += `<div>`
-    domString += `<h5 id="${message.messageId}3">${message.message}   ${message.createdAt}</h5>`
+    domString += `<h5 id="${message.messageId}3">${message.message} \xa0\xa0\ ${"|"} \xa0   ${message.createdAt}</h5>`
     domString += `</div>`
     domString += `<div class"mb-4"> `
-    domString += `<button id="${message.messageId}1" type="button" class="newMessage1 btn btn-info">EDIT</button>`
-    domString += `<button id="${message.messageId}2" type="button" class="newMessage2 btn btn-light">DELETE</button>`
+    domString += `<button id="${message.messageId}1" type="button" class="newMessage1 btn btn-info m-2">EDIT</button>`
+    domString += `<button id="${message.messageId}2" type="button" class="newMessage2 btn btn-light m-2">DELETE</button>`
     domString += `</div>`
     domString += `</div>`
     domString += `</div>`

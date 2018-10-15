@@ -1,5 +1,4 @@
 import { choices, detailsBuilder, getmessagez } from "./string.js";
-import { badWords} from "./badWords.js";
 
 const userName = () => {
     const nameDiv = document.getElementById("names");
@@ -48,7 +47,6 @@ const inputString = () => {
             if(choices.length > 19){
             choices.pop();
             }
-            badWords()
             userInput.value = "";
             uncheck();
             enableClearButton();

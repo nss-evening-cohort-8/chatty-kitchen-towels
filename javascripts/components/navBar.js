@@ -1,4 +1,6 @@
 import { choices, detailsBuilder, getmessagez } from "./string.js";
+import { isEditButtonClicked } from "./edit.js";
+
 
 
 const userName = () => {
@@ -35,24 +37,29 @@ window.addEventListener('load', () => {
 
 const inputString = () => {
     let userInput = document.getElementById('input-field');
+   
     userInput.addEventListener('keypress', (e) => {
-        if (e.keyCode === 13) {
-            let user = userName();
-            counterX++;
-            // returns value of input field
-            let value = userInput.value;
-            let createdMessage = { messageId: "message" + counterX, name: user, message: value, createdAt: moment().calendar() };
-            // Adding new object to array  
-            choices.unshift(createdMessage);
-            detailsBuilder(choices);
-            if(choices.length > 19){
-            choices.pop();
+        if(isEditButtonClicked == false){
+            if (e.keyCode === 13) {
+                let user = userName();
+                counterX++;
+                // returns value of input field
+                let value = userInput.value;
+                let createdMessage = { messageId: "message" + counterX, name: user, message: value, createdAt: moment().calendar() };
+                // Adding new object to array  
+                choices.unshift(createdMessage);
+                detailsBuilder(choices);
+                if(choices.length > 19){
+                choices.pop();
+                }
+                userInput.value = "";
+                uncheck();
+                enableClearButton();
             }
-            userInput.value = "";
-            uncheck();
-            enableClearButton();
-        }
-    })
+    }
+}
+)
+
 }
 // function to Activate Clear Button
 const enableClearButton = () => {

@@ -3,19 +3,19 @@
         {
             "messageId": "message1",
             "name": "Xavier",
-            "message": "Hey Joanna!! Let me know when you get this message",
+            "message": "Hey Joanna!! Let me know when you get this message.",
             "createdAt": "Today at 10:00AM"
         },
         {
             "messageId": "message2",
             "name": "Joanna",
-            "message": "Sup pup, Got the message but waiting on Mackenzie",
+            "message": "Sup pup, Got the message but waiting on Mackenzie.",
             "createdAt": "Yesterday at 10:00PM"
         },
         {
             "messageId": "message3",
             "name": "Mackenzie",
-            "message": "Don't wait for me Joanna. Do what you got to do. I am with Gunter",
+            "message": "Don't wait for me Joanna. Do what you got to do. I am with Gunter.",
             "createdAt": "Yesterday at 7:30PM"
         },
         {

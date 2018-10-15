@@ -12,6 +12,7 @@ const activateDeletes = () => {
         if (choices[i]["message"] + " " + choices[i]["createdAt"] === e.target.parentElement.parentElement.childNodes[1].firstChild.innerText) {
           choices.splice(i, 1);
           detailsBuilder(choices);
+        
         }
 
       }

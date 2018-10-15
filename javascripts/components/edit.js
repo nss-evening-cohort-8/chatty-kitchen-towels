@@ -8,6 +8,19 @@ function getFocus() {
     document.getElementById("input-field").focus();
 }
 
+let removMess = () => {
+
+  for (let i = 1; i < choices.length; i++) {
+    console.log(choices[i]);
+    // BELOW IS COMPAIRING THE STRING WITH THE EVENT LISTER OF THE DEL
+      if(choices[i].messageId === choices[0].messageId){
+        choices.splice(i,1);
+      }
+    }
+    detailsBuilder(choices);
+};
+
+
 const messEdit = () => {
     const editButtons = document.getElementsByClassName("newMessage1");
     for (let i = 0; i < editButtons.length; i++) {
@@ -20,6 +33,7 @@ const messEdit = () => {
         })
     }
 }
+
 
 const clearInput = () => {
     document.getElementById("input-field").value = '';
@@ -59,22 +73,14 @@ let findElement = () => {
         createdAt: moment().calendar()
     };
     skimFunction(newCleanMessId2, createdMessage);
-    detailsBuilder(choices);
+    // detailsBuilder(choices);
+    removMess();
+    console.log(choices);
     return message_id;
 };
 
 
-// let skimFunction = (varHere, varHere2) => {
-//     choices.forEach((choice) => {
-//         let oldId = choice["messageId"];
-//         if (oldId === varHere) {
-//             let replaceObj = varHere2;
-//             let varHere2Id = varHere2.messageId
-//             choices.unshift(replaceObj)
-//             detailsBuilder(choices);
-//              clearInput();
-//         }
-//     });
+
 
 
 export { messEdit, findElement}

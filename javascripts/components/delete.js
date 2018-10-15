@@ -13,12 +13,9 @@ const activateDeletes = () => {
           choices.splice(i, 1);
           detailsBuilder(choices);
         }
-
       }
-
     })
   }
 }
-
 
 export { activateDeletes }

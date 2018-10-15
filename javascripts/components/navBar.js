@@ -1,4 +1,5 @@
 import { choices, detailsBuilder, getmessagez } from "./string.js";
+import {findElement} from "./edit.js"
 
 const userName = () => {
     const nameDiv = document.getElementById("names");
@@ -35,7 +36,7 @@ window.addEventListener('load', () => {
 const inputString = () => {
     let userInput = document.getElementById('input-field');
     userInput.addEventListener('keypress', (e) => {
-        if (e.keyCode === 13) {
+        if (e.keyCode === 13 && !e.shiftKey) {
             let user = userName();
             counterX++;
             // returns value of input field
@@ -50,6 +51,8 @@ const inputString = () => {
             userInput.value = "";
             uncheck();
             enableClearButton();
+        }else if(e.keyCode ===13){
+             findElement();
         }
     })
 }
@@ -64,10 +67,8 @@ const enableClearButton = () => {
 // const messageLimit =()=>{
 //     if(choices.length > 20){
 //         let x = choices.pop();
-//         console.log(x);
 //     }
 // }
 // messageLimit();
 
 export{inputString, choices};
-

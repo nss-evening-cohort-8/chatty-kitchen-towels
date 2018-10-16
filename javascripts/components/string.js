@@ -21,7 +21,7 @@ const detailsBuilder = (messagesArray) => {
     domString += `<h3>${message.name}</h3>`
     domString += `</div>`
     domString += `<div>`
-    domString += `<h5 id="${message.messageId}3">${message.message} \xa0\xa0\ ${"|"} \xa0   ${message.createdAt}</h5>`
+    domString += `<h5 id="${message.messageId}3">${message.message}  ${message.createdAt}</h5>`
     domString += `</div>`
     domString += `<div class"mb-4"> `
     domString += `<button id="${message.messageId}1" type="button" class="newMessage1 btn btn-info m-2">EDIT</button>`
